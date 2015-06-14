@@ -20,8 +20,7 @@ public class Application extends Controller {
         int result = 0;
         String answer = "";
         System.out.println(q);
-
-
+        
         String pattern1 = "[^,]+: which of the following numbers is the largest: ([\\d\\s,]+)";
         Pattern p1 = Pattern.compile(pattern1);
         Matcher m1 = p1.matcher(q);
@@ -115,7 +114,6 @@ public class Application extends Controller {
             }
         }
 
-
         String pattern10 = "[^,]+: which of the following numbers are primes: ([\\d\\s,]+)";
         Pattern p10 = Pattern.compile(pattern10);
         Matcher m10 = p10.matcher(q);
@@ -146,8 +144,6 @@ public class Application extends Controller {
             }
         }
 
-
-
         String pattern11 = "[\\w]+: what is ([\\d]+) minus ([\\d]+)";
         Pattern p11 = Pattern.compile(pattern11);
         Matcher m11 = p11.matcher(q);
@@ -155,9 +151,6 @@ public class Application extends Controller {
             result = Integer.parseInt(m11.group(1)) - Integer.parseInt(m11.group(2));
             answer = "" + result;
         }
-
-
-
 
         System.out.println(answer);
         return ok(answer);
