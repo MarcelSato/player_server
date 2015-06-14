@@ -20,7 +20,7 @@ public class Application extends Controller {
         int result = 0;
         String answer = "";
         System.out.println(q);
-        
+
         String pattern1 = "[^,]+: which of the following numbers is the largest: ([\\d\\s,]+)";
         Pattern p1 = Pattern.compile(pattern1);
         Matcher m1 = p1.matcher(q);
