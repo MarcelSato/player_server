@@ -18,12 +18,18 @@ public class Application extends Controller {
 
     public Result index(String q) {
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7eb41b30a7ededf8c491c069aaa24c892bcedbed
         int result = 0;
         String answer = "";
         System.out.println(q);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7eb41b30a7ededf8c491c069aaa24c892bcedbed
         String pattern1 = "[^,]+: which of the following numbers is the largest: ([\\d\\s,]+)";
         Pattern p1 = Pattern.compile(pattern1);
         Matcher m1 = p1.matcher(q);
